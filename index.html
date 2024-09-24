@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nav And card</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 5px;
+        }
+
+        .container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .container h1 {
+            margin-left: 50px;
+        }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-links li {
+            margin-right: 35px;
+            font-weight: bold;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #fff;
+        }
+
+        main {
+            display: flex;
+            justify-content: flex-start; /* Aligns the card to the left */
+            padding: 20px;
+        }
+
+        .profile-card {
+            background-color: #fff;
+            margin: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            width: 250px;
+            height: 315px;
+        }
+
+        .profile-card img {
+            width: 150px;
+            height: 150px;
+            width: 250px;
+            object-fit: cover;
+        }
+
+        .profile-card h2 {
+            margin-bottom: 5px;
+        }
+
+        .profile-card p {
+            margin-bottom: 10px;
+            color: gray;
+        }
+
+        .profile-card a {
+            text-decoration: none;
+            background-color: black;
+            color: #fff;
+            border: none;
+            padding: 13px 97px;
+            cursor: pointer;
+        }
+        .container ul li a i{
+            padding-right: 5px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>WebSiteName</h1>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div class="profile-card">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/John_Doe%2C_born_John_Nommensen_Duchac.jpg/1200px-John_Doe%2C_born_John_Nommensen_Duchac.jpg" alt="John Doe">
+            <div class="conetent">
+                <h2>John Doe</h2>
+                <p>CEO & Founder, Example</p>
+                <p style="padding-bottom: 20px;">Harvard University</p>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
